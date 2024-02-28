@@ -13,6 +13,15 @@ const styles = StyleSheet.create({
     color: color,
     marginHorizontal: 12,
   }),
+
+  searchContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignContent: "center",
+    backgroundColor: COLORS.secondary,
+    borderRadius: SIZES.medium,
+    marginVertical: SIZES.medium,
+  },
 });
 
 export default styles;
