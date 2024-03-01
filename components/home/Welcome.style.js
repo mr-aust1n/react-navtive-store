@@ -21,15 +21,18 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.secondary,
     borderRadius: SIZES.medium,
     marginVertical: SIZES.medium,
+    marginHorizontal: 11,
     height: 50,
   },
+
   searchIcon: {
     marginHorizontal: 10,
     color: COLORS.gray,
+    // marginTop: SIZES.small,
   },
 
   searchWrapper: {
-    flexDirection: 1,
+    flex: 1,
     backgroundColor: COLORS.secondary,
     marginRight: SIZES.small,
     borderRadius: SIZES.medium,
@@ -38,7 +41,16 @@ const styles = StyleSheet.create({
     fontFamily: "regular",
     width: "100%",
     height: "100%",
-    paddingHorizontal: SIZES.small,
+    paddingHorizontal: SIZES.medium,
+  },
+
+  searchBtn: {
+    width: 50,
+    height: "100%",
+    borderRadius: SIZES.medium,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: COLORS.primary,
   },
 });
 

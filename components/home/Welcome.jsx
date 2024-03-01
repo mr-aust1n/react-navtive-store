@@ -2,10 +2,12 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "./Welcome.style";
 import { COLORS, SIZES } from "../../constants/index";
-import { Feather } from "@expo/vector-icons";
+import { Feather, Ionicons } from "@expo/vector-icons";
 import { TextInput } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <View style={styles.container}>
@@ -29,9 +31,19 @@ const Welcome = () => {
           <TextInput
             styles={styles.searchInput}
             value=""
-            onPressIn={() => {}}
+            onPressIn={() => navigation.navigate("Search")}
             placeholder="What are you looking for"
           />
+        </View>
+
+        <View>
+          <TouchableOpacity style={styles.searchBtn}>
+            <Ionicons
+              name="camera-outline"
+              size={SIZES.xLarge}
+              color={COLORS.offwhite}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
