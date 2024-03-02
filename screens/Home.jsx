@@ -11,6 +11,7 @@ import styles from "./home.style";
 import { Welcome } from "../components";
 import Carousel from "../components/home/Carousel";
 import Heading from "../components/home/Heading";
+import ProductRow from "../components/products/ProductRow";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
         <Welcome />
         <Carousel />
         <Heading />
+        <ProductRow />
       </ScrollView>
     </SafeAreaView>
   );
