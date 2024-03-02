@@ -24,33 +24,6 @@ const Welcome = () => {
 
       <View style={styles.searchContainer}>
         <TouchableOpacity>
-          <Ionicons
-            name="camera-outline"
-            size={SIZES.xLarge}
-            style={styles.searchIcon}
-          />
-        </TouchableOpacity>
-
-        <View style={styles.searchWrapper}>
-          <TextInput
-            styles={styles.searchInput}
-            value=""
-            onPressIn={() => {}}
-            placeholder="What are you looking for"
-          />
-        </View>
-
-        <View>
-          <TouchableOpacity style={styles.searchBtn}>
-            <Feather name="search" size={24} color={COLORS.offwhite} />
-          </TouchableOpacity>
-        </View>
-      </View>
-
-      {/* Below is the old code but camera was in the wrong place and instructions were not correct */}
-
-      {/* <View style={styles.searchContainer}>
-        <TouchableOpacity>
           <Feather name="search" size={24} style={styles.searchIcon}></Feather>
         </TouchableOpacity>
 
@@ -72,7 +45,7 @@ const Welcome = () => {
             />
           </TouchableOpacity>
         </View>
-      </View> */}
+      </View>
     </View>
   );
 };

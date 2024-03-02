@@ -9,6 +9,7 @@ import React from "react";
 import { Ionicons, Fontisto } from "@expo/vector-icons";
 import styles from "./home.style";
 import { Welcome } from "../components";
+import Carousel from "../components/home/Carousel";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
 
       <ScrollView>
         <Welcome />
+        <Carousel />
       </ScrollView>
     </SafeAreaView>
   );
