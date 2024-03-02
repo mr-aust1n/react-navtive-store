@@ -5,8 +5,9 @@ import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
 import { Cart } from "./screens";
+import { createStackNavigator } from "@react-navigation/stack";
 
-const Stack = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
